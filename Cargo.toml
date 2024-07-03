@@ -4,7 +4,7 @@ version = "0.0.0"
 edition = "2021"
 authors = ["Daniel Gallups <dsgallups@protonmail.com>"]
 description = "Render geo types in leptos"
-repository = "https://github.com/dsgallups/isnt-even-nor-odd"
+repository = "https://github.com/dsgallups/leptos-geo"
 keywords = ["leptos", "geo", "polygon", "svg", "visualization"]
 categories = [
     "development-tools::debugging",
