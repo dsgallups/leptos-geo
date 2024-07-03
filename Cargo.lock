@@ -585,6 +585,7 @@ version = "0.0.0"
 dependencies = [
  "geo",
  "leptos",
+ "num-traits",
  "serde",
  "thiserror",
  "web-sys",

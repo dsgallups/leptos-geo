@@ -1,11 +1,15 @@
 use std::ops::Deref;
 
-use leptos::{html::ElementDescriptor, HtmlElement};
+use leptos::{html::ElementDescriptor, HtmlElement, IntoView};
 
 use crate::style::{Stylable, Styled};
 
 /// Turns one's type into a leptos element, and hence an SvgElement.
 pub trait ToElement<NodeType: ElementDescriptor> {
+    fn to_view(&self) -> impl IntoView {
+        self.to_leptos_el()
+    }
+
     fn to_leptos_el(&self) -> HtmlElement<NodeType>;
 
     fn to_websys_el<WebSys>(&self) -> WebSys
